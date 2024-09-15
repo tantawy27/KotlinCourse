@@ -9,7 +9,14 @@ fun main() {
     println(accountType)
 
 
-    val user = UserLevel("ahmed",AccountType.PLATINUM)
+   // val user = UserLevel("ahmed",AccountType.PLATINUM)
+
+
+    println("=============================================")
+
+    println(AccountType.PLATINUM)
+    println(AccountType.PLATINUM.points)
+    println(AccountType.PLATINUM.followers)
 
 }
 
@@ -18,11 +25,11 @@ fun main() {
 
 
 
-enum class AccountType {
-    BRONZE,
-    SILVER,
-    GOLD,
-    PLATINUM
+enum class AccountType(val points:Int,val followers:Int) {
+    BRONZE(10,100),
+    SILVER(20,200),
+    GOLD(30,300),
+    PLATINUM(40,400)
 }
 
 
