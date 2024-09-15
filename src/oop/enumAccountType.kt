@@ -24,6 +24,23 @@ fun main() {
     println(AccountType.GOLD.points)
     println(AccountType.GOLD.printString())
 
+    println("=============================================")
+    //Iterate Over Enum Values
+
+    println("using for loop")
+
+    for (i in AccountType.values()){
+        println(i)
+    }
+
+    println("=============================================")
+
+    println("using forEach")
+
+    AccountType.values().forEach { println(it) }
+
+
+
 
 }
 
