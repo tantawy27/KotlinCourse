@@ -1,46 +1,71 @@
 package oop
 
 fun main() {
-    println(AccountType.PLATINUM)
-    val accountTypeFromApi="Gold"
+//    println(AccountType.PLATINUM)
+//    val accountTypeFromApi="Gold"
+//
+//
+//    val accountType=AccountType.valueOf(accountTypeFromApi.uppercase())
+//    println(accountType)
+//
+//
+//   // val user = UserLevel("ahmed",AccountType.PLATINUM)
+//
+//
+//    println("=============================================")
+//
+//    println(AccountType.PLATINUM)
+//    println(AccountType.PLATINUM.points)
+//    println(AccountType.PLATINUM.followers)
+//
+//    println("=============================================")
+//
+//    println(AccountType.GOLD)
+//    println(AccountType.GOLD.points)
+//    println(AccountType.GOLD.printString())
+//
+//    println("=============================================")
+//    //Iterate Over Enum Values
+//
+//    println("using for loop")
+//
+//    for (i in AccountType.values()){
+//        println(i)
+//    }
+//
+//    println("=============================================")
+//
+//    println("using forEach")
+//
+//    AccountType.values().forEach { println(it) }
 
 
-    val accountType=AccountType.valueOf(accountTypeFromApi.uppercase())
-    println(accountType)
+    //Exhaustive vs Non exhaustive When Expressions
 
+    val accountType =AccountType.PLATINUM
 
-   // val user = UserLevel("ahmed",AccountType.PLATINUM)
+    val msg = when (accountType){
 
+        AccountType.BRONZE ->{
+            "Bronze Member Access Allowed"
 
-    println("=============================================")
+        }
+        AccountType.SILVER ->{
+            "Sliver Member Access Allowed"
 
-    println(AccountType.PLATINUM)
-    println(AccountType.PLATINUM.points)
-    println(AccountType.PLATINUM.followers)
+        }
+        AccountType.GOLD ->{
+            "Gold Member Access Allowed"
 
-    println("=============================================")
+        }
+        AccountType.PLATINUM ->{
+            "Platinum Member Access Allowed"
 
-    println(AccountType.GOLD)
-    println(AccountType.GOLD.points)
-    println(AccountType.GOLD.printString())
-
-    println("=============================================")
-    //Iterate Over Enum Values
-
-    println("using for loop")
-
-    for (i in AccountType.values()){
-        println(i)
+        }
+        else -> "Unkown member type"
     }
 
-    println("=============================================")
-
-    println("using forEach")
-
-    AccountType.values().forEach { println(it) }
-
-
-
+    println(msg)
 
 }
 
