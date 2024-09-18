@@ -13,6 +13,17 @@ fun main() {
     val p1 = DataClass("Ali",30)
     println(p1.component1())
     println(p1.component2())
+
+    println("==================================")
+
+    //Destructure Data Class
+
+    val (fname,fage,fjob)=DataClass()
+    println(fname)
+    println(fage)
+    println(fjob)
+
+
 }
 
 
@@ -22,7 +33,7 @@ fun main() {
 
 
 //equals /hashcode / toString()
-data class DataClass(val name:String="UnKnown" , val age:Int=0) {
+data class DataClass(val name:String="UnKnown" , val age:Int=0,val job:String="None") {
 
     fun myInfo():String{
         return "my name is $name and iam $age Years Old"
