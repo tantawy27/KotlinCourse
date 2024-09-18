@@ -1,5 +1,7 @@
 package oop
 
+import javax.xml.crypto.Data
+
 fun main() {
     val dc1= DataClass("Ahmed",25)
     val dc2= DataClass("Mohammed",30)
@@ -23,8 +25,26 @@ fun main() {
     println(fage)
     println(fjob)
 
+    println("==================================")
+    println("Copy() Fun")
+
+    val obj=DataClass("Nour",21,"devoloper")     //object from class
+    val mycopy = obj.copy(name = "Walaa",age=23,job="devoper") //copy from obj
+
+    println(mycopy)
+
+    val order=Order(amount=100,cst= mycopy)
+    println(order)
+
+
+    val order2=order.copy(amount=300)                   //copy from order
+    println(order2)
+
 
 }
+
+
+data class Order(val amount:Int,val cst:DataClass)    //cst datatype is dataclass to enable it to make a copy
 
 
 
