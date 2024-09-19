@@ -2,7 +2,8 @@ package Equality
 
 fun main() {
     //Structural equality
-    // = =
+    // == Equal
+    // != Not Equal
 
     var name1="Mohammed"
     var name2="Mohammed"

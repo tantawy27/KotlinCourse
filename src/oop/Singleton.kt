@@ -26,6 +26,7 @@ fun doStuff(){
     FavoriteFood.name="Chicken"
 }
 
+// create a special object file
 
 //object FavoriteFood {
 //

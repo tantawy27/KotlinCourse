@@ -8,6 +8,7 @@ fun main() {
     when{
         user1.firstname=="Ahmed"&&user1.lastName=="Tantawy"->
         println("this is ahmed tantawy")
+
         else->println("this is not ahmed tantawy")
     }
 
@@ -25,3 +26,5 @@ fun main() {
 class User (var firstname:String,var lastName:String){
 
 }
+
+//Exhaustive vs Non exhaustive When Expressions at enumAccountType file

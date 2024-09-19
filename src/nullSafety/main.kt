@@ -18,7 +18,7 @@ fun main() {
     println(age)
 
 
-    //safe calls ?.
+    //safe calls  ->   ?.
 
     var firstname:String?="Mohammed"
 
@@ -45,6 +45,8 @@ fun main() {
 
     println("=======================================================")
 
+    //Elvis Operator
+
     var lastname2:String?="Mohammed Tamer"
 //    lastname2=null
     var length5= if(lastname2 != null) lastname2.length else -1
@@ -56,7 +58,8 @@ fun main() {
     println(length6)
     println("=======================================================")
 
-    //"The Double bang operator"   "!! Operator"
+    //"The Double bang operator"   "!! Operator"   //to convert any value to Non-null
+
     println("the !! operator")
 
     var name2:String?= "Mohammed"
