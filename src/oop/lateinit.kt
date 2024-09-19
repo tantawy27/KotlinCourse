@@ -9,7 +9,7 @@ fun main() {
 }
 
 class Info(var firstName:String,var lastName:String){
-   lateinit var favoriteCity:String                     // give its value lately
+   lateinit var favoriteCity:String                     // give its value lately in main not in class
 
 
     fun fullName():String="$firstName $lastName"
