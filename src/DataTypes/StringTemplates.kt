@@ -6,7 +6,7 @@ fun main() {
         Hello,
         My name is Ahmed.
         How are you ?
-    """.trimIndent()
+    """.trimIndent()                      //delete whitespace
     println(message)
 
 
