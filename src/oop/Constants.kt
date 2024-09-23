@@ -1,6 +1,8 @@
 package oop
 
-const val USER_NAME_FIELD="UserName"
+const val USER_NAME_FIELD="UserName"                    //const must be in:-
+                                                        // 1- top-level
+                                                        // 2- object in class (companion object)
 
 fun main() {
     val obj=UserInfo("ahmed","tantawy")
