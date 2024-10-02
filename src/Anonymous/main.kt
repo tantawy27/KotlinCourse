@@ -12,7 +12,7 @@ interface MyInter {
 
 
 fun main() {
-    val obj = object : B("Tamer"), MyInter {
+    val obj = object : B("Ahmed"), MyInter {
         //        override fun printName() {
 //            super.printName()
 //        }
