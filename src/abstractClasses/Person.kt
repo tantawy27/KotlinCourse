@@ -6,7 +6,7 @@ abstract class Person(val name:String) {
     }
 
     fun displayId(id:Int){
-        println("my id is $id")
+        println("my id is$id")
     }
 
     abstract fun displayJob(desc:String)
